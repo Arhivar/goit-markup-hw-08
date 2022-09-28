@@ -1,0 +1,34 @@
+.page__about-cont {
+    background-color: var(--thirst-font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.page__about-llst {
+    display: flex;
+    column-gap: 30px;
+}
+
+.page__about-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.page__about-list-item-header {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-color);
+}
+
+.page__about-list-item-page {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--page-color);
+}
