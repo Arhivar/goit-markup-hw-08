@@ -26,20 +26,38 @@
           </a>
           <ul class="page-header__navigation-list list">
             <li>
-              <a class="page-header__navigation-link link " href="./index.html">Студія</a>
+              <a
+                class="page-header__navigation-link link current"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
             <li>
-              <a class="page-header__navigation-link link current" href="./portfolio.html">Портфоліо</a>
+              <a
+                class="page-header__navigation-link link current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li>
-              <a class="page-header__navigation-link link" href="#contacts">Контакти</a>
+              <a class="page-header__navigation-link link" href="#contacts"
+                >Контакти</a
+              >
             </li>
           </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
 
-        <ul class="page-header__contacts  list">
+        <ul class="page-header__contacts list">
           <li class="page-header__contacts-li">
-            <a class="page-header__contacts-link link" href="mailto:info@devstudio.com">
+            <a
+              class="page-header__contacts-link link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contacts-icon" width="16" height="12">
                 <use
                   aria-label="Пошта"
@@ -61,6 +79,68 @@
             </a>
           </li>
         </ul>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn btn" data-menu-close>
+              <svg class="mobile-menu__close-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__nav-list list">
+              <li class="mobile-menu__nav-li">
+                <a
+                  class="mobile-menu__nav-link link current"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-menu__nav-li">
+                <a class="mobile-menu__nav-link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu__nav-li">
+                <a class="mobile-menu__nav-link link" href="#contacts"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__contacts-list list">
+              <li class="mobile-menu__contacts-li">
+                <a
+                  class="mobile-menu__contacts-number link"
+                  href="tel:+380961111111"
+                >
+                  
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-menu__contacts-li">
+                <a
+                  class="mobile-menu__contacts-mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list list">
+              <li class="mobile-menu__social-li">
+                <a class="mobile-menu__social-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-li">
+                <a class="mobile-menu__social-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-li">
+                <a class="mobile-menu__social-link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-li">
+                <a class="mobile-menu__social-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
