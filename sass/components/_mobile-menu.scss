@@ -32,6 +32,7 @@
   }
   .mobile-menu__nav-list {
     margin-bottom: 302px;
+    transition: color var(--transitions-dur-and-func);
   }
   .mobile-menu__nav-li:not(:last-child) {
     margin-bottom: 33px;
@@ -45,9 +46,11 @@
     &:hover {
       color: var(--hover-color);
     }
+    transition: color var(--transitions-dur-and-func);
   }
   .mobile-menu__contacts-list {
     margin-bottom: 64px;
+    transition: color var(--transitions-dur-and-func);
   }
   .mobile-menu__contacts-li:not(:last-child) {
     margin-bottom: 32px;
@@ -88,20 +91,21 @@
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    
-    
-  
   }
 }
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 15px;
   background-color: transparent;
   border: 0;
   padding: 0;
   line-height: 0;
+  &:hover{
+    fill: var(--hover-color);
+    transition: fill var(--transitions-dur-and-func);
+  }
 }
 
 .mobile-menu__close-icon {
