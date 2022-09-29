@@ -200,6 +200,7 @@ body {
     color: var(--page-color);
   }
   .mobile-menu__contacts-mail {
+    color: aqua;
     color: var(--page-color);
   }
 }
