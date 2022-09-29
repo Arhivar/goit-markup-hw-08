@@ -73,11 +73,6 @@
     fill: currentColor;
     margin-right: 8px;
     transition: fill var(--transitions-dur-and-func);
-
-    .page-contacts-list-li:hover &,
-    .page-contacts-list-li:focus & {
-      fill: var(--hover-color);
-    }
   }
   .page-header__contacts-li {
     display: flex;

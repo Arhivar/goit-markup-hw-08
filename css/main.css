@@ -182,7 +182,7 @@ body {
   .mobile-menu__nav-link {
     font-weight: 500;
     font-size: 40px;
-    line-height: 1.17;
+    line-height: 1.175;
     letter-spacing: 0.02em;
     color: var(--header-color);
   }
@@ -200,7 +200,7 @@ body {
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--page-color);
+    color: var(--hover-color);
   }
   .mobile-menu__contacts-mail {
     font-weight: 500;
@@ -209,7 +209,28 @@ body {
     letter-spacing: 0.02em;
     color: var(--page-color);
   }
+  .mobile-menu__social-list {
+    display: flex;
+    gap: 20px;
+  }
 }
+.mobile-menu__social-li:not(:last-child)::after {
+  height: 22px;
+  width: 1px;
+  position: absolute;
+  content: "";
+  background-color: rgba(33, 33, 33, 0.2);
+  transform: translate(10px, 0);
+}
+.mobile-menu__social-li .mobile-menu__social-link {
+  color: var(--hover-color);
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
 .mobile-menu__close-btn {
   position: absolute;
   top: 10px;
@@ -507,9 +528,6 @@ body {
     fill: currentColor;
     margin-right: 8px;
     transition: fill var(--transitions-dur-and-func);
-  }
-  .page-contacts-list-li:hover .contacts-icon, .page-contacts-list-li:focus .contacts-icon {
-    fill: var(--hover-color);
   }
   .page-header__contacts-li {
     display: flex;
