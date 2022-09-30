@@ -1,34 +1,52 @@
-.page__about-cont {
-    background-color: var(--thirst-font-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
 .page__about-llst {
-    display: flex;
-    column-gap: 30px;
+  display: block;
 }
-
 .page__about-list-item {
-    flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
 }
-
 .page__about-list-item-header {
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--header-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--header-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.page__about-list-item-page {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--page-color);
+}
+.page__about-cont {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--thirst-font-color);
+  margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
 }
 
-.page__about-list-item-page {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--page-color);
+@media screen and (min-width: 768px) {
+  .page__about-llst {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .page__about-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .page__about-list-item-header {
+    text-align: left;
+  }
+  .page__about-cont {
+    width: 354px;
+  }
+  
+}
+@media screen and (min-width: 1200px) {
+  .page__about-cont {
+    width: 270px;
+  }
 }

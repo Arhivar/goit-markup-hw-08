@@ -111,7 +111,6 @@
                   class="mobile-menu__contacts-number link"
                   href="tel:+380961111111"
                 >
-                  
                   +38 096 111 11 11
                 </a>
               </li>
@@ -120,7 +119,6 @@
                   class="mobile-menu__contacts-mail link"
                   href="mailto:info@devstudio.com"
                 >
-                  
                   info@devstudio.com
                 </a>
               </li>
@@ -145,8 +143,8 @@
     </header>
 
     <main>
-      <!-- <section class="page__main-head section">
-        <div class="container">
+      <section class="page__main-head section">
+        <div class="container page__main-head-cont">
           <h1 class="page__main-header">
             Ефективні рішення для вашого бізнесу
           </h1>
@@ -155,6 +153,7 @@
           </button>
         </div>
       </section>
+
       <section class="page__about section">
         <div class="container">
           <h2 class="visually-hidden">Чому саме ми?</h2>
@@ -227,7 +226,7 @@
             <li class="page__work-list-li">
               <img
                 class="page__work-image"
-                src="./images/cod.jpg"
+                src="./images/main/laptop_desktop.jpg"
                 alt="Кодимо"
                 width="370"
               />
@@ -236,7 +235,7 @@
             <li class="page__work-list-li">
               <img
                 class="page__work-image"
-                src="./images/test.jpg"
+                src="./images/main/phone_desktop.jpg"
                 alt="Тестимо"
                 width="370"
               />
@@ -245,7 +244,7 @@
             <li class="page__work-list-li">
               <img
                 class="page__work-image"
-                src="./images/design.jpg"
+                src="./images/main/tablet_desktop.jpg"
                 alt="Стилізуємо"
                 width="370"
               />
@@ -254,17 +253,41 @@
           </ul>
         </div>
       </section>
+
       <section class="page__team section">
         <div class="container">
           <h2 class="page__team-header">Наша команда</h2>
           <ul class="page__team-list list">
             <li class="page__team-list-li">
-              <img
-                class="page__team-list-image"
-                src="./images/smileglasses.jpg"
-                alt="Чоловік в окулярах з посмішкою"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/ihor_desktop.jpg    1x,
+                    ./images/main/ihor_desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/ihor_tablet.jpg    1x,
+                    ./images/main/ihor_tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/ihor_mobile.jpg    1x,
+                    ./images/main/ihor_mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="page__team-list-image"
+                  src="./images/main/ihor_mobile.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
+
               <h3 class="page__team-list-header">Ігор Дем'яненко</h3>
               <p class="page__team-list-page">Product Designer</p>
               <ul class="page__team-icon-list list">
@@ -307,12 +330,34 @@
               </ul>
             </li>
             <li class="page__team-list-li">
-              <img
-                class="page__team-list-image"
-                src="./images/women.jpg"
-                alt="Блондинка"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/olga_desktop.jpg    1x,
+                    ./images/main/olga_desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/olga_tablet.jpg    1x,
+                    ./images/main/olga_tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/olga_mobile.jpg    1x,
+                    ./images/main/olga_mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="page__team-list-image"
+                  src="./images/main/olga_mobile.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <h3 class="page__team-list-header">Ольга Рєпіна</h3>
               <p class="page__team-list-page">Frontend Developer</p>
               <ul class="page__team-icon-list list">
@@ -356,12 +401,35 @@
               </ul>
             </li>
             <li class="page__team-list-li">
-              <img
-                class="page__team-list-image"
-                src="./images/white_shirt.jpg"
-                alt="Чоловік в білій рубашці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/mykola_desktop.jpg    1x,
+                    ./images/main/mykola_desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mykola_tablet.jpg    1x,
+                    ./images/main/mykola_tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/mykola_mobile.jpg    1x,
+                    ./images/main/mykola_mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="page__team-list-image"
+                  src="./images/main/mykola_mobile.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
+
               <h3 class="page__team-list-header">Микола Тарасов</h3>
               <p class="page__team-list-page">Marketing</p>
               <ul class="page__team-icon-list list">
@@ -405,12 +473,34 @@
             </li>
 
             <li class="page__team-list-li">
-              <img
-                class="page__team-list-image"
-                src="./images/black_t-shirt.jpg"
-                alt="Чоловік в чорній футболці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/myhailo_desktop.jpg    1x,
+                    ./images/main/myhailo_desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/myhailo_tablet.jpg    1x,
+                    ./images/main/myhailo_tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/myhailo_mobile.jpg    1x,
+                    ./images/main/myhailo_mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="page__team-list-image"
+                  src="./images/main/myhailo_mobile.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <h3 class="page__team-list-header">Михайло Єрмаков</h3>
               <p class="page__team-list-page">UI Designer</p>
               <ul class="page__team-icon-list list">
@@ -521,10 +611,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="page-footer__contacts-container">
           <a href="./index.html" class="footer-logo logo"
@@ -601,28 +691,30 @@
             </li>
           </ul>
         </div>
-
-        <form class="page-footer__form">
+        <div class="page-footer__form-container">
           <p class="page-footer__form-title">Підпишіться на розсилку</p>
-          <div class="page-footer__form-cont">
-            <label class="page-footer__form-label"
-              ><input
-                type="email"
-                placeholder="E-mail"
-                name="user_mailing"
-                class="page-footer__form-input"
-                required
-            /></label>
+          <form class="page-footer__form">
+            <div class="page-footer__form-cont">
+              <label class="page-footer__form-label"
+                ><input
+                  type="email"
+                  placeholder="E-mail"
+                  name="user_mailing"
+                  class="page-footer__form-input"
+                  required
+              /></label>
+            </div>
             <button type="submit" class="page-footer__form-btn btn">
               Підписатися
               <svg class="page-footer__form-send" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-foot-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
+    <!--
     <div class="page-backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button

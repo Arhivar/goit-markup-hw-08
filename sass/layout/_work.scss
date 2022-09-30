@@ -1,22 +1,27 @@
 .page__work {
-    padding-top: 0;
+  display: none;
 }
-.page__work-list {
+@media screen and (min-width: 1200px) {
+  .page__work {
+    display: block;
+    padding-top: 0;
+  }
+  .page__work-list {
     display: flex;
     gap: 30px;
-}
-.page__work-list-li {
+  }
+  .page__work-list-li {
     position: relative;
-}
-.page__work-header {
+  }
+  .page__work-header {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-color);
-}
-.page__work-desc {
+  }
+  .page__work-desc {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -34,4 +39,5 @@
     left: 0;
     top: 100%;
     transform: translate(0, -100%);
+  }
 }

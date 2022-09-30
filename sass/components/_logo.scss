@@ -2,6 +2,13 @@
   margin-right: 87px;
   color: var(--first-logo-color);
 }
+.footer-logo {
+    font-style: normal;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--main-color);
+  }
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -21,11 +28,5 @@
   .logo {
     font-size: 26px;
     line-height: 1.2;
-  }
-  .footer-logo {
-    font-style: normal;
-    display: inline-block;
-    margin-bottom: 20px;
-    color: var(--main-color);
   }
 }
