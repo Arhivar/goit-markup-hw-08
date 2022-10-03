@@ -224,30 +224,57 @@
 
           <ul class="page__work-list list">
             <li class="page__work-list-li">
-              <img
-                class="page__work-image"
-                src="./images/main/laptop_desktop.jpg"
-                alt="Кодимо"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/laptop_desktop.jpg    1x,
+                    ./images/main/laptop_desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="page__work-image"
+                  src="./images/main/laptop_desktop.jpg"
+                  alt="Кодимо"
+                  width="370"
+                />
+              </picture>
+
               <p class="page__work-desc">Десктопні додатки</p>
             </li>
             <li class="page__work-list-li">
-              <img
-                class="page__work-image"
-                src="./images/main/phone_desktop.jpg"
-                alt="Тестимо"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/phone_desktop.jpg    1x,
+                    ./images/main/phone_desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="page__work-image"
+                  src="./images/main/phone_desktop.jpg"
+                  alt="Тестимо"
+                  width="370"
+                />
+              </picture>
+
               <p class="page__work-desc">Мобільні додатки</p>
             </li>
             <li class="page__work-list-li">
-              <img
-                class="page__work-image"
-                src="./images/main/tablet_desktop.jpg"
-                alt="Стилізуємо"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/tablet_desktop.jpg    1x,
+                    ./images/main/tablet_desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="page__work-image"
+                  src="./images/main/tablet_desktop.jpg"
+                  alt="Стилізуємо"
+                  width="370"
+                />
+              </picture>
+
               <p class="page__work-desc">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -802,8 +829,8 @@
           </button>
         </form>
       </div>
-    </div> 
-    
+    </div>
+
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

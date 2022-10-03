@@ -31,7 +31,7 @@
     flex-direction: column;
   }
   .mobile-menu__nav-list {
-    margin-bottom: 250px;
+    margin-bottom: 220px;
     transition: color var(--transitions-dur-and-func);
   }
   .mobile-menu__nav-li:not(:last-child) {
@@ -114,9 +114,6 @@
 }
 
 @media screen and (min-width: 480px) {
-  .mobile-menu__nav-list {
-    margin-bottom: 302px;
-  }
   .mobile-menu__contacts-list{
     margin-bottom: 64px;
   }

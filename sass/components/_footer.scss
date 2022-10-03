@@ -137,8 +137,7 @@
 }
 @media screen and (min-width: 768px) {
   .page-footer__form-container {
-    padding-left: 160px;
-    padding-right: 160px;
+    margin: 0 auto;
   }
   .page-footer__form-input {
     width: 450px;
@@ -148,7 +147,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
