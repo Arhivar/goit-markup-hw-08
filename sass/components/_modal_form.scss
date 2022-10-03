@@ -89,13 +89,14 @@
   align-items: center;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-icon-color);
 }
 .modal-form__info-link {
   color: var(--hover-color);
+  font-size: 9px;
 }
 
 .modal-form__check-cont {
@@ -156,7 +157,7 @@
   .modal-form__title {
     font-size: 20px;
   }
-  .modal-form-check__field {
+  .modal-form__check-place {
     font-size: 12px;
   }
 }

@@ -650,7 +650,7 @@
                   ></use></svg
               ></a>
             </li>
-            <li class="icon-list-li">
+            <li class="page__icon-list-li">
               <a href="" class="page-footer__cont-icon"
                 ><svg class="page-footer__image" width="20" height="20">
                   <use
@@ -661,26 +661,27 @@
             </li>
           </ul>
         </div>
-
-        <form class="page-footer__form">
+        <div class="page-footer__form-container">
           <p class="page-footer__form-title">Підпишіться на розсилку</p>
-          <div class="page-footer__form-cont">
-            <label class="page-footer__form-label"
-              ><input
-                type="email"
-                placeholder="E-mail"
-                name="user_mailing"
-                class="page-footer__form-input"
-                required
-            /></label>
+          <form class="page-footer__form">
+            <div class="page-footer__form-cont">
+              <label class="page-footer__form-label"
+                ><input
+                  type="email"
+                  placeholder="E-mail"
+                  name="user_mailing"
+                  class="page-footer__form-input"
+                  required
+              /></label>
+            </div>
             <button type="submit" class="page-footer__form-btn btn">
               Підписатися
               <svg class="page-footer__form-send" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-foot-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/menu.js"></script>
